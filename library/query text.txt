@@ -1,0 +1,71 @@
+
+
+admin table
+
+
+
+
+create table admin(
+adminId int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+adminName varchar(50) NOT NULL,
+password varchar(50) NOT NULL,
+username varchar(50) NOT NULL,
+email varchar(50) NOT NULL
+)
+
+
+
+
+books table
+
+
+
+
+
+create table books(
+book_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+bookTitle varchar(50) NOT NULL,
+author varchar(50) NOT NULL,
+publisherName varchar(50) NOT NULL,
+categories varchar(50) NOT NULL,
+ISBN varchar(50) NOT NULL,
+callNumber varchar(50) NOT NULL
+)
+
+
+
+student table
+
+
+
+
+
+
+create table students(
+studentId int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+email varchar(50) NOT NULL,
+name varchar(50) NOT NULL,
+department varchar(50) NOT NULL,
+phoneNumber varchar(50) NOT NULL
+)
+
+
+
+table borrow
+
+
+
+
+
+
+create table borrow(
+
+borrowDate varchar(50) NOT NULL,
+returnDate varchar(50) NOT NULL,
+studentId varchar(50) NOT NULL,
+bookId varchar(50) NOT NULL
+)
+
+
+
+
